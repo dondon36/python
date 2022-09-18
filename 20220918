@@ -1,0 +1,45 @@
+# a = {1,3,4,5,7}
+# b = {2,5,6,7,8}
+#
+# hap = a | b#파이프
+#
+# cha = a - b#하이푼
+#
+# gyo = a & b#엠퍼센트
+# print(f"합집합 = {hap}\n차집합={cha}\n교집합 = {gyo}")
+# keys = ("apple", "pear", "peach")
+# vals = (300, 250, 400)
+# z = dict(zip(keys,vals))
+# print(z)
+# a=7
+# b=3
+
+# 7 + 3 = 10
+# 7 - 3 = 4
+# 7 / 3 = 2.3333333333333333333
+# 7 // 3 = 2
+# 7 % 3 =1
+#int=정수,float=실수
+# a,b=input().split()
+# a=int(a)
+# b=int(b)
+# print('%d + %d = %d'%(a,b,a+b))
+# print('%d - %d = %d'%(a,b,a-b))
+# print('%d * %d = %d'%(a,b,a*b))
+# print('%d / %d = %f'%(a,b,a/b))
+# print('%d // %d = %d'%(a,b,a//b))
+# print('%d %% %d = %d'%(a,b,a%b))
+# print('{} + {} + {}'.format(a,b,a+b))
+# print('{} + {} + {}'.format(a,b,a-b))
+# print('{} + {} + {}'.format(a,b,a*b))
+# print('{} + {} + {}'.format(a,b,a/b))
+# print('{} + {} + {}'.format(a,b,a//b))
+# print('{} + {} + {}'.format(a,b,a%b))
+    # print(f'{a} + {b} = {a + b}')
+    # print(f'{a} - {b} = {a - b}')
+    # print(f'{a} * {b} = {a * b}')
+    # print(f'{a} / {b} = {a / b}')
+    # print(f'{a} // {b} = {a // b}')
+    # print(f'{a} % {b} = {a % b}')
+s = input()
+print(s + '??!')
