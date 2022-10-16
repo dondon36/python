@@ -1,0 +1,48 @@
+# star=int(input())
+# for a in range(star+1) :
+#     print(a * '*')
+
+# star=int(input())
+# for a in range(star) :
+#      print(' ' *(star-a)+ a * '*')
+
+#a만원 = 고정비용,B만원 = 가변비용
+#노트북을 100대 생산 == A만원 + 100 * B만원 == 총 비용
+# A = 1000 B = 70 C =170
+# 노트북 10대의 비용 = 1000 + 70 * 10 = 1700
+# 노트북 10대의 수익 = 170 *10 =1700
+#손익분기점 : 11
+#손익분기점이 없을 경우 : 가변비용 > 판매가격
+# A,B,C=input().split()
+# A = int(A)
+# B = int(B)
+# c = int(C)
+# x = A/c-B
+# 총비용 = A + B * x
+# 총수익=c * x
+# c * x > A + B * x
+# 
+# cost = A
+# x=0
+# if B > C:
+#     print(-1)
+# else:
+#g     print(A // (c - B) + 1)
+#     #TODO: 판매대수 출력
+
+
+    #프로그램 생성시 순서
+    #문제 파악
+    #문제 해결 방법 구상
+    #코드 작성
+layer = 1
+room = 1
+
+# 1,5,11,17,23
+n=int(input())
+while room < n:
+    layer += 1
+    room += 6 * (layer -1)
+
+
+print(layer)
