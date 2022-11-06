@@ -1,0 +1,128 @@
+# a= 'Hello Python'
+# print(a.split(''))
+# print(a.upper())
+# a=[4,1,2,3]
+# print(a[2])
+# print(a[1:2])
+# b=[5,8,6]
+#
+# a[1]=5
+# print(a[1])
+#
+# del a[3]
+# print(a)
+#
+# print(a+b)
+# print(b*3)
+# a.append(5)
+# a.reverse()
+# a.insert()
+# a.pop()
+# a.sort(reverse=True) #sort()오름차순 reverse=내림파순
+# print(a.count(3))
+# print(a.index(3))
+# a.remove(a)
+# a.extend(3,5)
+#
+# print(a)
+# t1 = (1,2,3,4)
+# t2 = (5,6,8)
+# # t2=(1,2,3)
+# # l1=[1,2,3]
+# # t3=tuple(l1)
+# # t4=1,2,3
+# print(t1+t2)
+# #(1,2,3,4,4,5,6,8)
+# print(t1[1])
+# #(2)
+# print(t2*2)
+# #(4,5,8,6,4,5,8,6)
+# print(t2[1:])
+# #(5,8,6)
+# print(len(t1))
+# a = ['hello']
+# b = ['world']
+# d1 = {"apple":"사과",'banana.':'바나나'}
+# d1["북숭아"]= ' peach'
+# del d["banana"]
+# d1['apple']='수박'
+# print(d1)
+# d1 = {'A': '에이','A':'비','A',:'씨'}
+# print(d1['A'])
+# print(d1)
+# d1['A'] = "디"
+# print(d1)
+# d2 = {["ABC"]:'숫자'}
+# print(d2[('a','b','c')])
+#
+# k=d1.keys()
+# v=d1.valuses()
+# i=d1.items()
+#
+# print(f"k={k}\nv={v}\ni = {i}")
+
+# string = input()
+# # 1. 입력받은 문자열에 해당하는 번호를 유추한다.
+# # 2.유추한 번호를 누르는데 걸리는 시간을 구한다.
+# # 3.시간들을
+#
+#
+# n,m = input().split()
+# n=int(n)
+# m=int(m)
+# A=[]
+# B=[]
+# for _ in range(n):
+#     x= input().split()
+#     A.append(x)
+# for _ in range(n):
+#     x = input().split()
+#     B.append(x)
+# #x,y=0~2
+# # int(A[x][y]) + int(B[x][y])
+# for x in range(n):
+#     for y in range(m):
+#         print(int(A[x][y]) + int(B[x][y]),end=' ')
+#     print()
+#
+# # A = [[1,1,1],
+#      [2,2,2],
+#      [0,1,0],]
+# B = [[3,3,3],
+#      [4,4,4],
+#      [5,5,100],]
+# A=[['1', '1', '1'],
+#    ['2', '2', '2'],
+#    ['0', '1', '0']]
+# B=[['3', '3', '3'],
+#    ['4', '4', '4'],
+#    ['5', '5', '100']]
+
+# C =[[4,4,4],
+#     [6,6,6],
+#     [5,6,100]]
+#집합 = 중괄호 사용{}
+#집합의 특징 1. 순서 X,2.중복 된 값 제거
+string = 'HELLO'
+a = {'A':1}
+print()
+s = set()
+print(type(s))
+s1 = {1,2,3,4}
+s2 = {3,4,5,6}
+#합 (shift + \)
+print(s1 | s2)
+#차 -
+print(s1 - s2)
+#교 (shift + 7)
+print(s1 & s2)
+#대칭차 ( shift + 6) ^(캐럿)
+print(s1 ^ s2)
+#(교/차/합/대칭 차) 집합
+
+#자료형의 참과 거짓
+#기준:값이 있으면 참,없으면 거짓
+print(None)
+a=[1,2,3]
+if a:
+    print(a)
