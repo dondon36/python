@@ -1,0 +1,66 @@
+#머쓱이네 피자가게는 피자를 일곱 조각으로 잘라 줍니다.
+# 피자를 나눠먹을 사람의 수 n이 주어질 때,
+# 모든 사람이 피자를 한 조각 이상 먹기 위해
+# 필요한 피자의 수를 완성해보세요.
+# n = int(input())
+#
+# if n % 7 == 0:
+#     print(n//7)
+# else:
+#     print((n//7+1))
+#머쓱이네 피자가게는 피자를 여섯 조각으로 잘라 줍니다.
+# 피자를 나눠먹을 사람의 수 n이 매개변수로 주어질 때,
+# n명이 주문한 피자를 남기지 않고
+# 모두 같은 수의 피자 조각을 먹어야 한다면
+# 최소 몇 판을 시켜야 하는지를  완성해보세요.
+# n=int(input())
+# result=0
+# while True:
+#     result += 1
+#     if result * 6 % n == 0:
+#         break
+#
+# print(result)
+# 머쓱이네 피자가게는 피자를 여섯 조각으로 잘라 줍니다.
+# 피자를 나눠먹을 사람의 수 n이 매개변수로 주어질 때,
+# n명이 주문한 피자를 남기지 않고 모두 같은 수의
+# 피자 조각을 먹어야 한다면
+# 최소 몇 판을 시켜야 하는지를 완성해보세요.
+# n,slice=input().split()
+# n = int(n)
+# slice = int(slice)
+# result=0
+# if n % slice == 0:
+#     result= n % slice
+# else:
+#     result= n % slice +1
+#     print(result)
+# numbers=input()
+# result = 0
+# str_nums = {'zero':"0",'one':"1",'two':"2",
+#             'three':"3",'four':"4",'five':"5",
+#             'six':"6",'seven':"7",'eight':"8",
+#             'nine':"9"}
+# for i in str_nums:
+#     numbers = numbers.replace(i,str_nums[i])
+# print(numbers)
+# n=input()
+# str=["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+# for s in range(len(str)):
+#     if str[s] in n:
+#         n=n.replace(str[s],str(s))
+# n=int(n)
+# print(type(n))
+my_string = input()
+n=['a','e','i','o','u']
+# result=''
+# for s in my_string:
+#     if s in n:
+#         continue
+#     result += s
+#     print(result)
+
+for i in n:
+    if i in my_string:
+        my_string = my_string.replace(i,'')
+print(my_string)
