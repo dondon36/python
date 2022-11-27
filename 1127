@@ -1,0 +1,86 @@
+# def print_ODD():
+#     for i in  range(1,100):
+#         if i % 2 == 0:
+#             continue
+#         print(i)
+#
+# for _ in range(100):
+#     print_ODD()
+#
+# def plusl(a):
+#      result = a + 1
+#      return result
+#
+# x=10
+# answer = plusl(x)
+# print(answer)
+#
+# def mypeappend(_list,value):
+#     temp = [value]
+#     _list += temp
+#     return _list
+# a=[1,2,3]
+# a=mypeappend(a,30)
+# print(a)
+# def test(a,b,c):
+#     return a + b + c
+# x = 1
+# y = 2
+# z = 3
+# reslut = test(x,y,z)
+# print(reslut)
+#
+# a='Hello'
+# print(a.replace('H','D'))
+# def myreplacee(x,y,z):
+#     result = ""
+#
+#     for i in x:
+#         if i == y:
+#             result += z
+#         else:
+#             result += i
+#     return result
+#
+# print(myreplacee(a,'H',"D"))
+# def solution(num1, num2):
+#     answer = num1-num2
+#     return answer
+#
+# num1=2
+# num2=3
+# print(solution(num1,num2))
+# def solution(num1, num2):
+#     answer = 0
+#     if num1 == num2:
+#         answer = 1
+#     else:
+#         answer = -1
+#     return answer
+# def test(n):
+#     if n<0:
+#         print('end')
+#
+#     for i in range(n):
+#         print(i)
+# x = -10
+# test(x)
+def solution(sides):
+    sides.sort()  #정렬을 해서 가장 큰 값이; 2번째 인덱스에 위치
+    if sides[0]+sides[1]>sides[2]:
+        return 1
+    else:
+        return 2
+    #side에는 삼각형의 세변의 길이가 들어있다.
+    #가장 긴 변의 길이는 나머지 두변의 길이의 합보다 작아야한다.
+    #만약 가장 긴 변의 길이가 나머지 두 변의 길이의 합보다 작으면 1을 아니면 2를 리턴한다.
+    answer = 0
+
+
+    return answer
+
+
+s = [1,2,3]         #출력값 : 2
+ss = [199, 72, 222] #출력값 : 1
+print(solution(s))
+print(solution(ss))
