@@ -1,19 +1,65 @@
-player=input('O나 X중 선택하세요')
-if player=='O':
-    computer='X'
-else:
-    computer='O'
+# 틱택토 프로젝트
+# 3X3 보드판 O나 x를 선택 후, 빙고가 되도록 보드판 선택
+# 로그인, o나 x를 선택하는 기능,O나 X를 보드판 입력하는 기능,우승 확인,
+# 보드판을 확인하는 기능,컴퓨터가 랜덤한 위치에 o나 x를 입력하는 기능,
+from functions import log_in
+#게임 실행 순서
+#1.로그인
+cnt=0
+while True:
+    input_id = input("아이디를 입력하시오")
+    input_pw = input("비밀번호를 입력하시오")
+    if log_in(input_id,input_pw):
+        print(f"{input_id}님이 로그인 되었습니다")
+        break
+    else:
+        print("아이디나 비밀번호를 확인하시오")
+    cnt += 1
+    if cnt == 3:
+        print("로그인 횟수가 3회를 초과했습니다")
+        exit()
+#1-1 ID,PW 입력
+#1-2 ID,PW가 등록되어있는 txt파일에서 조회
+#1-3 입력횟수가 3회 이상 초과할 경우 종료,일치할 시 게임
+while True:
+    player=input('O나 X중 선택하세요')
+    if player in ['O','X']:
+        if player=='0':
+            computer='X'
+            break
+        else:
+            computer='O'
+            player='X'
+            break
+    else:
+        print("다시 하세요")
+        exit()
 
+from functions import *
+board = ['*'] * 9
+    for j in board:
+
+        display_board(board)
+        pos = int(input())
+        if board[pos] == '*':
+            board[pos] = 'O'
+            display_board(board)
+        else:
+            print('다시')
+            break
 #2.o,x 선택
 #2-1 컴퓨터는 플레이어가 선택하는 것에 반대되는 문양을 지정
-board = ['*'] *3 ,['*'] * 3, ['*'] * 3, sep='\n'
+diplay_board(board)
+
 #보드판을 만듬
 input(board) #플레이어가 쓴 인덱스 번호에 수는 플 기호로
-# disp_board(board)
-
+disp_board(board)
+player=""
+computer=""
 while True:
-    input_pos(board)
+    pos=input_pos
 #3.보드판에 플레이어기 선택한 문양을 입력(위치선택)
+
 #3-1 이미 입력된 자리일 경우 다시 입력받는다.
     disp_board(board)
     victory(board,player)
@@ -22,3 +68,91 @@ while True:
 #5.컴퓨터가 랜덤한 자리에 문양 입력
 #6.우승조건판별
 #3~6은 우승 조건이 나오기 전까지나 무승부 조건이 되기 전까지 반복
+#test
+from functions import display_board
+board=["*"]*9
+# board[2]='O'
+# print('-------')
+# for i in range(3):
+#     print('|'+board[0+i*3]+'|'+board[1+i*3]+'|'+board[2+i*3]+'|')
+#     print('-------')
+board=['*']* 9
+for j in board:
+
+    display_board(board)
+    pos = int(input())
+    if board[pos] == '*':
+        board[pos] = 'O'
+        display_board(board)
+    else:
+        print('다시')
+        break
+#기능
+def log_in(input_id,input_pw):
+    real_id=[]
+    real_pw=[]
+    k=0
+    file = open('login.txt',"r",encoding="utf8")
+    line= file.readlines()
+    for i in line:
+        key,value =i.split(':')
+        if key=='ID':
+            real_id.append(value)
+            k+=1
+        else:
+            real_pw.append(value)
+    for j in range(k):
+        if '\n' in real_id[j]:
+            real_id[j] = real_id[j].replace('\n','')
+        if '\n' in real_pw[j]:
+            real_pw[j] = real_pw[j].replace('\n', '')
+    for c in range(k):
+        if input_id == real_id[c] and input_pw == real_pw[c]:
+            return True
+
+    return False
+
+# input_id=input('ID:')
+# input_pw=input('PW:')
+# log_in(input_id,input_pw)
+
+def display_board(board):
+    print('-------')
+    for i in range(3):
+        print('|' + board[0 + i * 3] + '|' + board[1 + i * 3] + '|' + board[2 + i * 3] + '|')
+        print('-------')
+
+def input_pos():
+    pos = input()
+    if pos == '*':
+        '?'
+    else:
+        exit('다시')
+    #pos는 보드판의 범위 안에 있어야하고,
+    #보드판의 pos번째 값이 *이어야한다.
+    #위의 조건에 만족하지 않으면 다시 입력받는다.
+
+    return pos
+    #로그인
+    #파일 입출력
+# open("파일이름","w,r,a")
+#w=쓰기,r = 읽기, a=추가
+file = open('login.txt',"r",encoding="utf8")
+
+# while True:
+#     line=file.readline()
+#     print(line)
+#     if line == '':
+#         break
+line=file.readlines()
+
+print(line)
+
+file.close()
+#######
+ID:ㄷㄱ
+PW:1234
+ID:ㅇㅇ
+PW:4567
+ID:ㅁㅁㅁㄴ
+PW:89789
