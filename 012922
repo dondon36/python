@@ -1,0 +1,24 @@
+player=input('O나 X중 선택하세요')
+if player=='O':
+    computer='X'
+else:
+    computer='O'
+
+#2.o,x 선택
+#2-1 컴퓨터는 플레이어가 선택하는 것에 반대되는 문양을 지정
+board = ['*'] *3 ,['*'] * 3, ['*'] * 3, sep='\n'
+#보드판을 만듬
+input(board) #플레이어가 쓴 인덱스 번호에 수는 플 기호로
+# disp_board(board)
+
+while True:
+    input_pos(board)
+#3.보드판에 플레이어기 선택한 문양을 입력(위치선택)
+#3-1 이미 입력된 자리일 경우 다시 입력받는다.
+    disp_board(board)
+    victory(board,player)
+#4.우승 조건 판별
+#4-1우승 조건: 한줄 빙고
+#5.컴퓨터가 랜덤한 자리에 문양 입력
+#6.우승조건판별
+#3~6은 우승 조건이 나오기 전까지나 무승부 조건이 되기 전까지 반복
