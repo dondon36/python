@@ -1,0 +1,70 @@
+# # string = 'Hello World'
+# # def myfind(string,a,start=0,end=-1):
+# #     length = len(a)
+# #     if end == -1:
+# #         end = len(string)
+# #     for i in range(start,end-length+1):
+# #         if string[i:i+length] == a:
+# #             return i
+# #     return -1
+# # #     b=0
+# # #     end=int(end)
+# # #     if start == 0:
+# # #         start = len(string)
+# # #     for j in range(len(end)):
+# # #         if string[j:-1]==a:
+# # #             start += 1
+# # #     for i in range(start):
+# # #         if a == string[i]:
+# # #              return i
+# # #     return -1
+# # print(myfind(string,'l'))
+# # print(myfind(string,'l',4))
+# # print(myfind(string,'l',4,9))
+# # print(myfind(string,'ld'))
+# # s = '1010'
+# # def myint(x:str,base = 10):
+# #     x = x[::-1]     # 0101
+# #     for i in range(len(x)):
+# #         result = 0
+# #         for i in range(len(x)):
+# #             result += int(x[i]) * base ** i      # 값 베이스 인덱스 번호
+# #         return result
+# # print(myint(s))
+# # print(myint(s,2))
+# # print(myint(s,8))
+# # s = '1010'
+# # def myint(x:str,base = 10):
+# #     x = x[::-1]     # 0101
+# #     hexa = {'A': 10 , 'B':11,'C': 12,'D':13,'E':14,'F':15}
+# #     result = 0
+# #     for i in range(len(x)):
+# #         if x[i].isalpha():
+# #             result += hexa[x[i]] * base ** i
+# #         else:
+# #             result += int(x[i]) * base ** i
+# #     return result
+# # print(myint(s))
+# # print(myint(s,2))
+# # print(myint(s,8))
+# # print(myint(s,16))
+# # print(myint('FF',16))
+# # a=[8,4,3,6,'a',2,'b']
+# # print(a[-1:-4:-1])
+# # a=[4,1,2,[5,8,[9,7],3],6]
+# # print(len(a))
+# # print(a[3][2][0]) #5
+# a = ['a','b','c','d']
+# # # a[1] = 'ff'
+# # # print()     # ['a','ff','d]
+# a.sort()
+# print(a)
+#아파트 만들기
+a=input('층')
+b=input('호')
+
+apartment = [['101호','102호','103호','104호',],
+             ['201호','202호','203호','204호',],
+             ['301호','302호','303호','304호',]]
+
+apartment[a-1][b+1]
