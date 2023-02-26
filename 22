@@ -1,0 +1,11 @@
+string = 'Hello World'
+def myfind(string,old,new):
+    b=""
+    for i in range(len(string)):
+        if old == string[i]:
+            b += new
+        else:
+            b += -1
+    return b
+    print(myfind(string, '1',3))
+    print(myfind(string,' or'))
