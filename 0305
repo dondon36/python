@@ -1,0 +1,42 @@
+apartment=[]
+    # apartment = [['101호', '102호', '103호', '104호', ],
+    #          ['201호', '202호', '203호', '204호', ],
+    #          ['301호', '302호', '303호', '304호', ]]
+a=int(input())
+b=int(input())
+
+apartment = []
+for i in range(1,a+1):
+    temp = []
+    for j in range(1,b+1):
+        s = str(i*100+j)+'호'
+        temp.append(s)
+    apartment.append(temp)
+
+print(apartment)
+
+info = [[1,3,5,2],
+        [2,2,3,2],
+        [3,1,3,2]]
+
+# info_apartment = [{'101호':'1명','102호':'3명','103호':'5명','104호':'2명'},
+#                   {'201호':'2명','202호':'2명','303호':'3명','204호':'2명'},
+#                   {'301호':'3명','302호':'1명','303호':'3명','304호':'2명'}]
+
+def make_apart_info(apartment,info):
+    result = []
+    for x in range(len(str(apartment))):
+        dictionary = {}
+        for y in range(len(str(apartment[x]))):
+            dictionary[apartment[x][y]]=str(info[i][j])+'명'
+        result.append(dictionary)
+    return result
+
+
+make_info = 0
+apartment = make_apart_info(a,b)
+print(f"apartment\n{apartment}")
+info = make_info(a,b)
+print(f"info\n{info}")
+apartment_info = make_apart_info(apartment,info)
+print(f"apartment_info\n{apartment_info}")
