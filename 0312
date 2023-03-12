@@ -1,0 +1,46 @@
+# def solution(k,score):
+#     a = []
+#     answer = []
+#
+#     for i in range(len(score)):
+#         a.append(i)
+#         a.sort(reverse=True)
+#         if len(a) > k:
+#             a.pop()
+#             answer.append(a[-1])
+#
+#
+#     print(a,answer)
+#     return answer
+# def solution(k,score):
+#     answer = []
+#     a = []
+#
+#     for i in score:
+#         a.append(score[i])
+#         a.sort(reverse=True)
+#         a = a[:k]
+#         answer.append(a[-1])
+#
+#     return answer
+
+# def PrimeCount(n):
+#     divisor = set()
+#     for i in range(1,int(n ** 0.5)+1):
+#         if n % i == 0:
+#             divisor.add(i) # i = 1 ,2
+#             divisor.add(n//i)
+#     return len(divisor)
+# def solution(number,limit,power):
+#     answer = 0
+#     knights = list(range(1,number+1))
+#
+#     for i in knights:
+#         weapon = PrimeCount(i)
+#         if weapon > limit:
+#             weapon = power
+#         answer += weapon
+#
+#     return answer
+
+#숙제160586
