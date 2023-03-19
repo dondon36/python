@@ -44,3 +44,12 @@
 #     return answer
 
 #숙제160586
+
+def solution(keymap, targets):
+    for a in targets:
+        a = []
+        for b in keymap:
+            c=[]
+            c.append()  
+    answer = []
+    return answer
