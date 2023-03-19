@@ -1,0 +1,59 @@
+# def solution(keymap, targets):
+#     for i in targets:#1번 키부터 차례대로 할당된 문자들이 순서대로 담긴 문자열배열(["ABCD","AABB"])
+#         j = []
+#         for a in i:#이중for문(key별로 몇번 사용해야하는지)
+#             result = []
+#             for b in keymap:# 입력하려는 문자열들이 담긴 문자열 배열(["ABACD", "BCEFD"])
+#                 if ?:#최소값 구한는 방법(j를 사용해서)
+#                     result.append()#result에 추가
+#                 else:
+#
+#     return c
+# def solution(keymap, targets):
+#     answer = []
+#     dictionary ={}
+#     for key in keymap:
+#         for i in range(len(key)):
+#             k = key[i]
+#             v = i + 1
+#             if k not in dictionary or dictionary[k] > v:
+#                 dictionary[k] = v
+#
+#     for target in targets:
+#         cnt = 0
+#         for t in target:
+#             if t in dictionary:
+#                 cnt += dictionary[t]
+#             else:
+#                 cnt = -1
+#                 break
+#         answer.append(cnt)
+#     return answer
+#
+# keymap = ["ABACD", "BCEFD"]
+# targets = ["ABCD","AABB"]
+# print(solution(keymap,targets))
+#
+# def solution(common):
+#     diff1 = common[0] - common[1]
+#     diff2 = common[1] - common[2]
+#     if diff1 == diff2:
+#         return common[-1] - diff1
+#     else:
+#         rate = diff2 / diff1
+#         return  common[-1] * rate
+#
+# def solution(participant, completion):
+    # participant.sort()
+    # completion.sort()
+    # for i in range(len(completion)):
+    #     if participant[i] != completion[i]:
+    #     return participant[i]
+    # return participant[-1]
+     #숙제
+    #1845
+def solution(nums):
+     #폰켓몬은 최대 nums/2만큼 가질수있다.
+     #nums에 들어있는 정수값들은 종류를 말한다.
+     for i in range(len(nums)):
+         len(nums)
