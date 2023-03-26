@@ -1,0 +1,8 @@
+def solution(nums):
+    # 폰켓몬은 최대 nums/2만큼 가질수있다.
+    # nums에 들어있는 정수값들은 종류를 말한다.
+    a=len(nums)
+    b=len(nums)/2
+    for i in range(len(nums)):
+        if a <b:
+            
