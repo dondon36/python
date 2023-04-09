@@ -1,0 +1,54 @@
+# def solution(new_id):
+#     # 1
+#     new_id = new_id.lower()
+#     # 2
+#     for i in new_id:
+#         if not (i.isdigit() or i.islower() or i in {'-', '_', '.'}):
+#             new_id = new_id.replace(i, '')
+#     # 3
+#     while '..' in new_id:
+#         new_id = new_id.replace('..', '.')
+#     print(3, new_id)
+#
+#     # 4
+#     new_id = new_id.strip('.')
+#
+#     # 5
+#     if new_id == '':
+#         new_id = 'a'
+#
+#     # 6
+#     if len(new_id) >= 16:
+#         new_id = new_id[:15]
+#     new_id = new_id.strip('.')
+#
+#     # 7
+#     while len(new_id) < 3:
+#         plus = new_id[-1]
+#         new_id += plus
+#
+#     return new_id
+#
+# solution("z-+.^.")
+#
+
+def solution(N, stages):
+    #1.반복하여 실패자를 찾음,
+    # 2.스테이지와 실패자의수의 이름을 딕셔너리로 만듬
+    # 3.반복함
+    # 4.딕셔너리를 이용해 sort값으로 정렬
+    # 5.result에 sort값 삽입
+    # 6.result 반환
+    a = []
+    b = len(stages)
+    result=[]
+    for i in stages:
+        if i in a:
+            a[i].append(1)
+        else:
+            a[i]=1
+    for i in b:
+        
+
+
+    return result
