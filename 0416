@@ -1,0 +1,18 @@
+def solution(N, stages):
+    # 1.반복하여 실패자를 찾음,
+    # 2.스테이지와 실패자의수의 이름을 딕셔너리로 만듬
+    # 3.반복함
+    # 4.딕셔너리를 이용해 sort값으로 정렬
+    # 5.result에 sort값 삽입
+    # 6.result 반환
+    a = {}
+    b = len(stages)
+    result = []
+    for i in range:
+        if b += 1:
+            a[i]=0
+        else:
+            result(stages)=0
+
+
+    return result
