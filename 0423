@@ -1,0 +1,33 @@
+# def solution(name, yearning, photo):
+#     answer = []
+#     for i in photo:
+#         result = 0
+#         for j in i:
+#             if j in name:
+#                 result += yearning[name.index(j)]
+#         answer.append(result)
+#
+#     return answer
+# def solution(k, m, score):
+# #     answer = 0
+# #     a=m-1
+# #     score.sort(reverse=True)
+# #     for i in range(len(score)//m):
+# #         answer += score[a] * m
+# #         a += m
+# #     return answer
+#131705
+def solution(number):
+    answer = 0
+
+    for i in number:
+        for j in number:
+            if j == i:
+                continue
+            for k in number.index:
+
+    while j + i + k = 0
+
+    return answer
+solution([-2, 3, 0, 2, -5])
+#86491
