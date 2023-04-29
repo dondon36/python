@@ -1,0 +1,13 @@
+def solution(sizes):
+    answer = 0
+    w=[]
+    h=[]
+    for i in range(len(sizes)):
+        if sizes[i]<?:
+            w.append(sizes[i])
+            h.append(?)
+        else:
+            h.append(sizes[i])
+            w.append(?)
+
+    return answer
